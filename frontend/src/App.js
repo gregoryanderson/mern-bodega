@@ -8,6 +8,7 @@ import ProductScreen from "./screens/ProductScreen";
 import "./App.css";
 
 const App = () => {
+  console.log("hey")
   return (
     <Router>
       <Header />
