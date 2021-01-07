@@ -7,7 +7,7 @@ import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
 import "./App.css";
 
-const App = () => {
+const App = () => { 
   return (
     <Router>
       <Header />
