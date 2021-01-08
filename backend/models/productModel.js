@@ -17,7 +17,7 @@ const reviewSchema = mongoose.Schema({
   timestamps: true
 });
 
-const userSchema = mongoose.Schema(
+const productSchema = mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
@@ -71,6 +71,6 @@ const userSchema = mongoose.Schema(
   }
 );
 
-const Produce = mongoose.model("Product", productSchema);
+const Product = mongoose.model("Product", productSchema);
 
 export default Product;
