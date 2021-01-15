@@ -33,7 +33,6 @@ const PlaceOrderScreen = ({ history }) => {
 
   const orderCreate = useSelector((state) => state.orderCreate);
   const { order, success, error } = orderCreate;
-  console.log(order)
 
   const placeOrderHandler = () => {
     dispatch(
