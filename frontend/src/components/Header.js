@@ -2,15 +2,16 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
-import { logout } from '../actions/userActions'
+import { logout } from "../actions/userActions";
 
 const Header = () => {
   const dispatch = useDispatch();
 
   const { userInfo } = useSelector((state) => state.userLogin);
+  console.log(userInfo)
 
   const logoutHandler = () => {
-    dispatch(logout())
+    dispatch(logout());
   };
 
   return (
@@ -43,6 +44,19 @@ const Header = () => {
                     <i className="fas fa-user"></i>Login
                   </Nav.Link>
                 </LinkContainer>
+              )}
+              {userInfo && userInfo.isAdmin && (
+                <NavDropdown title='admin' id="admin-menu">
+                  <LinkContainer to="/admin/userList">
+                    <NavDropdown.Item>Users</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/admin/productList">
+                    <NavDropdown.Item>Products</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/admin/orderList">
+                    <NavDropdown.Item>Orders</NavDropdown.Item>
+                  </LinkContainer>
+                </NavDropdown>
               )}
             </Nav>
           </Navbar.Collapse>
