@@ -12,6 +12,7 @@ const HomeScreen = () => {
   const productList = useSelector((state) => state.productList);
   const { loading, error, products } = productList;
 
+
   useEffect(() => {
     dispatch(listProducts());
   }, [dispatch]);
@@ -20,7 +21,7 @@ const HomeScreen = () => {
     <>
       <h1>Latest Products</h1>
       {loading ? (
-        <Loader/>
+        <Loader />
       ) : error ? (
         <Message variant="danger">{error}</Message>
       ) : (
