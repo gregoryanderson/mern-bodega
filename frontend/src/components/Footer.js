@@ -9,7 +9,6 @@ const Footer = () => {
           <Col className="text-center py-3">Copywrite &copy; Buttermilk's Bodega</Col>
         </Row>
       </Container>
-      footer
     </footer>
   );
 };
