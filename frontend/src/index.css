@@ -21,12 +21,13 @@ h2 {
 }
 
 .primary-background {
-  background-color: #727b80;
+  background-color: #727B80;
 }
 
 /* carousel */
 .carousel {
-  border: 2px solid black;
+  border: 2px solid #333;
+  width: 70%;
 }
 .carousel-item-next,
 .carousel-item-prev,
@@ -39,14 +40,14 @@ h2 {
 }
 
 .carousel-caption h2 {
-  color: #fff;
+  color: #333;
 }
 
 .carousel img {
   height: 300px;
   padding: 30px;
   margin: 40px;
-  border-radius: 50%;
+  border-radius: 75px;
   margin-left: auto;
   margin-right: auto;
 }

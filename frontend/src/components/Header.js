@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Navbar, Nav, Container, NavDropdown, Image } from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
-import Buttermilk from "../images/buttermilk_curl.jpg";
+import Buttermilk from "../images/Buttermilk_curl.png";
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar variant="dark" expand="lg" className="primary-background" collapseOnSelect>
+      <Navbar variant="light" expand="lg" className="primary-background" collapseOnSelect>
         <Container>
           <Image
             src={Buttermilk}
