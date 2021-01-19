@@ -13,7 +13,7 @@ import {
 import Rating from "../components/Rating";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
-import Meta from '../components/Meta'
+import Meta from "../components/Meta";
 import {
   listProductDetails,
   createProductReview,
@@ -29,6 +29,7 @@ const ProductScreen = ({ history, match }) => {
 
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
+  console.log({ product });
 
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
