@@ -20,7 +20,14 @@ h2 {
   margin: 0.1rem;
 }
 
+.primary-background {
+  background-color: #727b80;
+}
+
 /* carousel */
+.carousel {
+  border: 2px solid black;
+}
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
