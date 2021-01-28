@@ -4,14 +4,19 @@ import { Card } from "react-bootstrap";
 import Rating from "./Rating";
 
 const Product = ({ product }) => {
+  const bgC = product.brand;
   return (
-    <Card className="my-3 p-3 rounded">
-      <div style={{minHeight: "200px", margin: "auto"}}>
+    <Card className="my-3 p-3 card-1" style={{ backgroundColor: bgC }}>
+      <div style={{ margin: "auto", backgroundColor: bgC }}>
         <Link to={`/product/${product._id}`}>
-          <Card.Img src={product.image} variant="top" />
+          <Card.Img
+            src={product.image}
+            variant="top"
+            style={{ width: "150px" }}
+          />
         </Link>
       </div>
-      <div style={{minHeight: "275px", margin: "auto"}}>
+      <div style={{ minHeight: "275px", margin: "auto" }}>
         <Card.Body>
           <Link to={`/product/${product._id}`}></Link>
           <Card.Title as="div">

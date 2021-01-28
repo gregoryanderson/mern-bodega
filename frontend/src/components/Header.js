@@ -19,7 +19,13 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar variant="light" expand="lg" className="primary-background" collapseOnSelect>
+      <Navbar
+        variant="light"
+        expand="lg"
+        className="primary-background"
+        collapseOnSelect
+        style={{ borderBottom: "1px solid black" }}
+      >
         <Container>
           <Image
             src={Buttermilk}

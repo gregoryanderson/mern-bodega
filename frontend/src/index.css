@@ -1,3 +1,23 @@
+.hero {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+}
+
+.hero::before {
+  content: "";
+  background-image: url('./images/produce.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
 main {
   min-height: 80vh;
 }
@@ -9,6 +29,7 @@ h3 {
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
+  color: black
 }
 
 h2 {
@@ -16,18 +37,36 @@ h2 {
   padding: 0.5rem 0;
 }
 
+.black-border {
+  border: 1px solid black;
+}
+
 .rating span {
   margin: 0.1rem;
 }
 
 .primary-background {
-  background-color: #727B80;
+  background-color: #90caf9;
+}
+
+.secondary-background {
+  background-color: #e1f5fe;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 2px solid black;
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* carousel */
 .carousel {
   border: 2px solid #333;
-  width: 70%;
+  width: 100%;
 }
 .carousel-item-next,
 .carousel-item-prev,
@@ -37,6 +76,7 @@ h2 {
 .carousel-caption {
   position: absolute;
   top: 0;
+  padding-top: 0px;
 }
 
 .carousel-caption h2 {
@@ -47,7 +87,6 @@ h2 {
   height: 300px;
   padding: 30px;
   margin: 40px;
-  border-radius: 75px;
   margin-left: auto;
   margin-right: auto;
 }

@@ -25,7 +25,7 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main className="py-3">
+      <main className="py-3 secondary-background">
         <Container>
           <Route path="/order/:id" component={OrderScreen} />
           <Route path="/place-order" component={PlaceOrderScreen} />

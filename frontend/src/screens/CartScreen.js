@@ -46,7 +46,7 @@ const CartScreen = ({ match, location, history }) => {
             Your cart is empty <Link to="/">Go Back</Link>
           </Message>
         ) : (
-          <ListGroup variant="flush">
+          <ListGroup variant="flush" className='black-border'>
             {cartItems.map((item) => (
               <ListGroup.Item key={item.product}>
                 <Row>
@@ -90,7 +90,7 @@ const CartScreen = ({ match, location, history }) => {
         )}
       </Col>
       <Col md={4}>
-        <Card>
+        <Card className='black-border'>
           <ListGroup variant="flush">
             <ListGroup.Item>
               <h2>

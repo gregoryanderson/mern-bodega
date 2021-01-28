@@ -67,8 +67,8 @@ const ProductScreen = ({ history, match }) => {
   };
 
   return (
-    <>
-      <Link className="btn btn-light my-3" to="/">
+    <div>
+      <Link className="btn btn-light my-3 black-border" to="/">
         Go Back
       </Link>
       {loading ? (
@@ -83,7 +83,7 @@ const ProductScreen = ({ history, match }) => {
               <Image src={product.image} alt={product.name} fluid />
             </Col>
             <Col md={3}>
-              <ListGroup variant="flush">
+              <ListGroup variant="flush" className="black-border">
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
@@ -100,7 +100,7 @@ const ProductScreen = ({ history, match }) => {
               </ListGroup>
             </Col>
             <Col md={3}>
-              <Card>
+              <Card className="black-border">
                 <ListGroup variant="flush">
                   <ListGroup.Item>
                     <Row>
@@ -161,7 +161,7 @@ const ProductScreen = ({ history, match }) => {
             <Col md={6}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
-              <ListGroup variant="flush">
+              <ListGroup variant="flush" className="black-border">
                 {product.reviews.map((review) => (
                   <ListGroup.Item key={review._id}>
                     <strong>{review.name}</strong>
@@ -226,7 +226,7 @@ const ProductScreen = ({ history, match }) => {
           </Row>
         </>
       )}
-    </>
+    </div>
   );
 };
 

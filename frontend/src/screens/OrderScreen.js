@@ -73,8 +73,8 @@ const OrderScreen = ({ match, history }) => {
   }, [dispatch, orderId, successPay, order]);
 
   const successPaymentHandler = (paymentResult) => {
-    dispatch(payOrder(orderId, paymentResult))
-  }
+    dispatch(payOrder(orderId, paymentResult));
+  };
 
   return (
     <>
@@ -87,7 +87,7 @@ const OrderScreen = ({ match, history }) => {
           <h1>Order {order._id}</h1>
           <Row>
             <Col md={8}>
-              <ListGroup variant="flush">
+              <ListGroup variant="flush" className="black-border">
                 <ListGroup.Item>
                   <h2>Shipping</h2>
                   <p>
@@ -164,7 +164,7 @@ const OrderScreen = ({ match, history }) => {
               </ListGroup>
             </Col>
             <Col md={4}>
-              <Card>
+              <Card className="black-border">
                 <ListGroup>
                   <ListGroup.Item>
                     <h2>Order Summary</h2>
