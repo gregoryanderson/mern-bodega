@@ -6,7 +6,7 @@ import Rating from "./Rating";
 const Product = ({ product }) => {
   const bgC = product.brand;
   return (
-    <Card className="my-3 p-3 card-1" style={{ backgroundColor: bgC }}>
+    <Card className="my-3 p-3 card-1" style={{ backgroundColor: bgC, borderRadius: '5px' }}>
       <div style={{ margin: "auto", backgroundColor: bgC }}>
         <Link to={`/product/${product._id}`}>
           <Card.Img

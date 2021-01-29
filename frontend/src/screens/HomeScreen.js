@@ -28,16 +28,17 @@ const HomeScreen = ({ match }) => {
   return (
     <>
       <Meta />
-      {/* <div className="hero"> */}
-        <h1>Top Products</h1>
-        {!keyword ? (
+      <h1>Top Products</h1>
+      {!keyword ? (
+        <div className="hero">
           <ProductCarousel />
-        ) : (
-          <Link to="/" className="btn btn-light">
-            Go Back
-          </Link>
-        )}
-      {/* </div> */}
+        </div>
+      ) : (
+        <Link to="/" className="btn btn-light">
+          Go Back
+        </Link>
+      )}
+
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
